@@ -1,0 +1,12 @@
+git config --local --list
+git remote -v
+git remote add origin 仓库地址.git
+git init  初始化
+git config user.name "Xiaozhi"
+git config user.email "2151774869@qq.com"
+git checkout --orphan new_temp_branch
+git add .
+git commit -m "2026-06-03-Update"
+git branch -D main
+git branch -m new_temp_branch main
+git push -f origin HEAD:main
